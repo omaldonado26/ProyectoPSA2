@@ -7762,12 +7762,9 @@ html:not(.active-slider-within-NcgYf) .player-container-wIELK.overlayHidden-gyjI
   bottom: -1rem;
   left: -1rem;
   right: -1rem;
-  background: url(../../images/background_1.svg), url(../../images/background_2.svg);
-  background-color: var(--primary-background-color);
-  background-position: bottom left, top right;
-  background-size: 53%, 54%;
-  background-repeat: no-repeat;
-  filter: blur(6rem);
+  background: linear-gradient(135deg, #07120d 0%, #0a1c14 40%, #0f2e20 100%);
+  filter: none;
+  /* quitamos blur exagerado */
 }
 .intro-container-tkNS6 .heading-container-oI70m {
   flex: none;
@@ -8374,28 +8371,47 @@ html:not(.active-slider-within-NcgYf) .player-container-wIELK.overlayHidden-gyjI
   --horizontal-nav-bar-size: 5.5rem;
   --vertical-nav-bar-size: 6rem;
   --focus-outline-size: 2px;
+  /* Redes (las dejo igual) */
   --color-facebook: #1877F1;
   --color-x: #000000;
   --color-reddit: #FF4500;
   --color-imdb: #f5c518;
   --color-trakt: #ffffff;
+  /* Placeholders */
   --color-placeholder: #60606080;
   --color-placeholder-text: hsla(0, 0%, 75%, 0.5);
   --color-placeholder-background: hsla(0, 0%, 50%, 0.2);
-  --primary-background-color: #0c0b11;
-  --secondary-background-color: #1a173e;
-  --primary-foreground-color: rgba(255, 255, 255, 0.9);
-  --secondary-foreground-color: #0c0b11;
-  --primary-accent-color: #7b5bf5;
-  --secondary-accent-color: #22b365;
-  --tertiary-accent-color: #f6c700;
-  --quaternary-accent-color: #1245a6;
-  --overlay-color: rgba(255, 255, 255, 0.05);
-  --modal-background-color: #0f0d20;
-  --outer-glow: 0px 0px 15px rgba(123, 91, 245, 0.37);
+  /* ====== TEMA VERDE OSCURO ====== */
+  /* Fondo principal (oscuro) */
+  --primary-background-color: #070c0a;
+  /* #070C0A aprox */
+  /* Fondo secundario (para gradiente) */
+  --secondary-background-color: #0a1c14;
+  /* #0A1C14 aprox */
+  /* Textos */
+  --primary-foreground-color: rgba(236, 245, 240, 0.92);
+  /* blanco verdoso suave */
+  --secondary-foreground-color: #070c0a;
+  /* Acentos (botones, hover, focus, highlights) */
+  --primary-accent-color: #16a34a;
+  /* verde principal */
+  --secondary-accent-color: #22c55e;
+  /* verde secundario */
+  --tertiary-accent-color: #a3e635;
+  /* lima suave */
+  --quaternary-accent-color: #059669;
+  /* teal/verde profundo */
+  /* Overlays y modales */
+  --overlay-color: rgba(236, 245, 240, 0.06);
+  --modal-background-color: #09120e;
+  /* Glow */
+  --outer-glow: 0px 0px 15px rgba(22, 163, 74, 0.35);
+  /* Estados */
   --warning-accent-color: #ffa500;
   --danger-accent-color: #dc2626;
+  /* UI */
   --border-radius: 0.75rem;
+  /* Variables dependientes de LESS (déjalas igual) */
   --top-overlay-size: 5.25rem;
   --bottom-overlay-size: 0rem;
   --overlap-size: 3rem;

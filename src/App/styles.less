@@ -52,17 +52,17 @@
     --color-placeholder: #60606080;
     --color-placeholder-text: @color-surface-50;
     --color-placeholder-background: @color-surface-dark5-20;
-    --primary-background-color: rgba(12, 11, 17, 1);
-    --secondary-background-color: rgba(26, 23, 62, 1);
+    --primary-background-color: rgba(6, 31, 20, 1);
+    --secondary-background-color: rgba(22, 74, 50, 1);
     --primary-foreground-color: rgba(255, 255, 255, 0.9);
-    --secondary-foreground-color: rgb(12, 11, 17, 1);
-    --primary-accent-color: rgb(123, 91, 245);
-    --secondary-accent-color: rgba(34, 179, 101, 1);
-    --tertiary-accent-color: rgba(246, 199, 0, 1);
-    --quaternary-accent-color: rgba(18, 69, 166, 1);
-    --overlay-color: rgba(255, 255, 255, 0.05);
-    --modal-background-color: rgba(15, 13, 32, 1);
-    --outer-glow: 0px 0px 15px rgba(123, 91, 245, 0.37);
+    --secondary-foreground-color: rgb(6, 27, 18);
+    --primary-accent-color: rgb(64, 186, 116);
+    --secondary-accent-color: rgba(131, 223, 172, 1);
+    --tertiary-accent-color: rgba(214, 241, 182, 1);
+    --quaternary-accent-color: rgba(24, 132, 80, 1);
+    --overlay-color: rgba(114, 226, 170, 0.14);
+    --modal-background-color: rgba(9, 43, 29, 0.96);
+    --outer-glow: 0px 0px 15px rgba(72, 204, 133, 0.42);
     --warning-accent-color: rgba(255, 165, 0, 1);
     --danger-accent-color: rgba(220, 38, 38, 1);  
     --border-radius: 0.75rem;
@@ -167,8 +167,17 @@ html {
     body {
         width: 100%;
         height: 100%;
-        background: linear-gradient(41deg, var(--primary-background-color) 0%, var(--secondary-background-color) 100%);
+        background: radial-gradient(circle at 18% 14%, rgba(128, 248, 184, 0.14), transparent 36%), radial-gradient(circle at 82% 0%, rgba(82, 197, 132, 0.12), transparent 34%), linear-gradient(41deg, var(--primary-background-color) 0%, var(--secondary-background-color) 100%);
         -webkit-font-smoothing: antialiased;
+
+        &::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background: radial-gradient(circle at 50% 100%, rgba(66, 180, 118, 0.12), transparent 52%);
+            z-index: 0;
+        }
 
         :global(#app) {
             position: relative;

@@ -35,8 +35,8 @@ const HorizontalNavBar = React.memo(({ className, route, query, title, backButto
                     <div className={styles['logo-container']}>
                         <Image
                             className={styles['logo']}
-                            src={require('/assets/images/stremio_symbol.png')}
-                            alt={' '}
+                            src={require('/assets/images/uth_symbol_green.svg')}
+                            alt={'UTH logo verde'}
                         />
                     </div>
             }

@@ -12,20 +12,23 @@
     height: 100%;
     overflow-y: auto;
 
-    .background-container {
-        z-index: -1;
-        position: fixed;
-        top: -1rem;
-        bottom: -1rem;
-        left: -1rem;
-        right: -1rem;
-        background: url('/assets/images/background_1.svg'), url('/assets/images/background_2.svg');
-        background-color: var(--primary-background-color);
-        background-position: bottom left, top right;
-        background-size: 53%, 54%;
-        background-repeat: no-repeat;
-        filter: blur(6rem);
-    }
+.background-container {
+    z-index: -1;
+    position: fixed;
+    top: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    right: -1rem;
+
+    background: linear-gradient(
+        135deg,
+        #07120d 0%,
+        #0a1c14 40%,
+        #0f2e20 100%
+    );
+
+    filter: none; /* quitamos blur exagerado */
+}
 
     .heading-container {
         flex: none;

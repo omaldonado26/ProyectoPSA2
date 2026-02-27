@@ -44,28 +44,50 @@
     --horizontal-nav-bar-size: 5.5rem;
     --vertical-nav-bar-size: 6rem;
     --focus-outline-size: 2px;
+
+    /* Redes (las dejo igual) */
     --color-facebook: #1877F1;
     --color-x: #000000;
     --color-reddit: #FF4500;
     --color-imdb: #f5c518;
     --color-trakt: rgb(255, 255, 255);
+
+    /* Placeholders */
     --color-placeholder: #60606080;
     --color-placeholder-text: @color-surface-50;
     --color-placeholder-background: @color-surface-dark5-20;
-    --primary-background-color: rgba(12, 11, 17, 1);
-    --secondary-background-color: rgba(26, 23, 62, 1);
-    --primary-foreground-color: rgba(255, 255, 255, 0.9);
-    --secondary-foreground-color: rgb(12, 11, 17, 1);
-    --primary-accent-color: rgb(123, 91, 245);
-    --secondary-accent-color: rgba(34, 179, 101, 1);
-    --tertiary-accent-color: rgba(246, 199, 0, 1);
-    --quaternary-accent-color: rgba(18, 69, 166, 1);
-    --overlay-color: rgba(255, 255, 255, 0.05);
-    --modal-background-color: rgba(15, 13, 32, 1);
-    --outer-glow: 0px 0px 15px rgba(123, 91, 245, 0.37);
+
+    /* ====== TEMA VERDE OSCURO ====== */
+    /* Fondo principal (oscuro) */
+    --primary-background-color: rgba(7, 12, 10, 1);          /* #070C0A aprox */
+    /* Fondo secundario (para gradiente) */
+    --secondary-background-color: rgba(10, 28, 20, 1);       /* #0A1C14 aprox */
+
+    /* Textos */
+    --primary-foreground-color: rgba(236, 245, 240, 0.92);   /* blanco verdoso suave */
+    --secondary-foreground-color: rgba(7, 12, 10, 1);
+
+    /* Acentos (botones, hover, focus, highlights) */
+    --primary-accent-color: rgba(22, 163, 74, 1);            /* verde principal */
+    --secondary-accent-color: rgba(34, 197, 94, 1);          /* verde secundario */
+    --tertiary-accent-color: rgba(163, 230, 53, 1);          /* lima suave */
+    --quaternary-accent-color: rgba(5, 150, 105, 1);         /* teal/verde profundo */
+
+    /* Overlays y modales */
+    --overlay-color: rgba(236, 245, 240, 0.06);
+    --modal-background-color: rgba(9, 18, 14, 1);
+
+    /* Glow */
+    --outer-glow: 0px 0px 15px rgba(22, 163, 74, 0.35);
+
+    /* Estados */
     --warning-accent-color: rgba(255, 165, 0, 1);
-    --danger-accent-color: rgba(220, 38, 38, 1);  
+    --danger-accent-color: rgba(220, 38, 38, 1);
+
+    /* UI */
     --border-radius: 0.75rem;
+
+    /* Variables dependientes de LESS (déjalas igual) */
     --top-overlay-size: @top-overlay-size;
     --bottom-overlay-size: @bottom-overlay-size;
     --overlap-size: @overlap-size;
@@ -74,6 +96,7 @@
     --safe-area-inset-right: @safe-area-inset-right;
     --safe-area-inset-bottom: @safe-area-inset-bottom;
     --safe-area-inset-left: @safe-area-inset-left;
+
     --dynamic-viewport-width: @viewport-width;
     --dynamic-viewport-height: @viewport-height;
     --large-viewport-width: @viewport-width;
